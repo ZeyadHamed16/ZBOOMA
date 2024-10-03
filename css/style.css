@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-image: url('../media/image/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+
+    overflow: hidden;
+
+    font-family: "Fugaz One", sans-serif;
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        background-image: url('../media/image/Background_mobile.png');
+        overflow-y: scroll;
+    }
+
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------------- [GENERAL STYLE] --------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+
+.global-btn {
+    text-decoration: none;
+    color: #20dba9;
+    background-color: #053427;
+    border-radius: 25px;
+    padding: 5px 15px;
+    font-weight: bolder;
+    transition: 0.3s ease-out;
+}
+
+.global-btn:hover {
+    background-color: #363636;
+}
+
+
+/* --------------------------------------------------------------------------------- */
+/* -------------------- NAVBAR [Log In] & [Log Out] & [Profile] -------------------- */
+/* --------------------------------------------------------------------------------- */
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav .nav-links a {
+    margin: 5px;
+}
+
+nav .nav-profile-btn {
+    padding: 5px 8px;
+}
+
+nav .nav-logo img {
+    display: none;
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 99999;
+
+        padding: 15px;
+        background-color: #1544385c;
+        box-shadow: 0 0 15px black;
+        backdrop-filter: blur(10px);
+        border-radius: 0 0 20px 20px;
+    }
+
+
+    nav .nav-logo img {
+        display: block;
+    }
+
+}
+
+/* --------------------------------------------------------------------------------- */
+/* ------------------------------ SOCIAL MEDIA ICONS ------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+.social-icons-container {
+    position: fixed;
+    left: 0;
+    top: 25%;
+    z-index: 99999;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    text-align: center;
+    padding-left: 5px;
+
+
+
+    a {
+        padding: 5px 8px;
+        font-size: 21px;
+    }
+
+    .skype:hover {
+        color: #F4F7F7;
+        background-color: #00A9EB;
+    }
+
+    .twitter:hover {
+        color: #F4F7F7;
+        background-color: #1DA1F2;
+    }
+
+    .whatsapp:hover {
+        color: #F4F7F7;
+        background-color: #30D14E;
+    }
+
+    .facebook:hover {
+        color: #F4F7F7;
+        background-color: #007CF7;
+    }
+
+    .instagram:hover {
+        color: #F4F7F7;
+        background-color: #C8347F;
+    }
+
+    .snapchat:hover {
+        color: #F4F7F7;
+        background-color: #F7F401;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .social-icons-container {
+        gap: 20px;
+    }
+
+    .social-icons-container a {
+        font-size: 28px;
+    }
+
+}
+
+
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------- MAIN CONTENT ---------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+
+/* --------------------------------- container ---------------------------------- */
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    height: 90vh;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        margin-top: 5vh;
+        height: auto;
+    }
+}
+
+
+/* --------------------------------- container ---------------------------------- */
+
+
+.main-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 15px;
+}
+
+
+/* --------------------------------- general ---------------------------------- */
+
+.center-text-container {
+    position: relative;
+    color: white;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bolder;
+
+
+    p {
+        margin: 0;
+        text-wrap: nowrap;
+    }
+
+    p:nth-child(1) {
+        color: #20dba9;
+    }
+}
+
+.float-bg {
+    position: absolute;
+    background-color: #02221a;
+    width: 100%;
+    height: 70%;
+    top: 30%;
+    z-index: -1;
+
+    border-radius: 30px;
+}
+
+
+/* --------------------------------- booma ---------------------------------- */
+
+.main-booma-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    position: relative;
+}
+
+.main-booma-container img {
+    width: 200px;
+}
+
+.main-booma-text {
+
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+
+    p {
+        text-wrap: nowrap;
+        margin: 0 20px 10px 0;
+    }
+
+    p:nth-child(1) {
+        color: #20dba9;
+        font-size: 75px;
+        margin-bottom: -10px;
+    }
+
+}
+
+/* --------------------------------- employee ---------------------------------- */
+
+.main-employee-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    position: relative;
+}
+
+.main-employee-text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 25px 10px;
+
+
+    p {
+        margin: 0;
+        text-wrap: nowrap;
+    }
+
+    p:nth-child(2) {
+        color: #20dba9;
+    }
+
+}
+
+/* --------------------------------- Middle content ---------------------------------- */
+
+.main-middle-top {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+.main-middle-top p{
+    margin: 0;
+}
+
+.main-middle-top p span {
+    color: #20dba9;
+}
+
+
+
+.main-middle-bottom {
+    background: linear-gradient(145deg, #02221a 10%, rgba(0, 0, 0, 1) 90%);
+    border-radius: 30px;
+    padding: 20px 20px 0px ;
+}
+.main-middle-bottom img {
+    width: 250px;
+}
+
+
+.main-middle-bottom {
+    display: flex;
+}
+
+.main-middle-bottom-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-middle-bottom-left span {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+.main-middle-bottom-left img {
+    width: 180px;
+}
